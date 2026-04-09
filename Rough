@@ -1,0 +1,62 @@
+•	Capture duration – short spike vs long-running issue
+•	Capture point – server-side, client-side, SPAN, firewall, load balancer
+•	Interface speed & drops – missed packets during capture
+•	Time accuracy – correct timestamps, clock skew
+•	PCAP size & packet count – completeness of data
+•	Source / Destination MAC
+•	VLAN / QinQ tags
+•	ARP requests & replies
+•	Duplicate frames / out-of-order
+•	Broadcast / Multicast volume
+•	Source / Destination IPs
+•	IP protocol (TCP / UDP / ICMP)
+•	TTL values (path changes, loops)
+•	Fragmentation / MTU issues
+•	ICMP types (unreachable, fragmentation needed, redirects)
+•	3 way handshake success/failure
+•	SYN / SYN ACK / ACK timing
+•	Retransmissions
+•	Duplicate ACKs
+•	Zero Window
+•	Window size & window scaling
+•	FIN / RST behavior
+🔍 Red flags:
+•	High retransmissions → congestion, packet loss
+•	RST packets → app crash, firewall reset
+•	Zero window → receiver-side bottleneck
+•	Packet loss (sequence gaps)
+•	Jitter
+•	One way delay
+•	Packet rate
+•	RTT (Round Trip Time)
+•	Client → Server response time
+•	Server processing delay
+•	TCP handshake time
+•	Application response gaps
+•	HTTP response codes (200 / 401 / 500 / 504)
+•	DNS query/response time
+•	TLS handshake success, version, cipher
+•	Application errors in payload
+•	Request/response matching
+•	Top talkers (IPs, ports)
+•	Bandwidth utilization
+•	Packet rate spikes
+•	Flow duration
+•	East-West vs North-South traffic
+•	Malformed packets
+•	Checksum errors
+•	Out-of-order packets
+•	TCP resets
+•	Asymmetric traffic
+•	Unexpected protocol behavior
+•	Unknown / suspicious IPs
+•	Port scanning patterns
+•	Unusual protocols
+•	Encrypted traffic over odd ports
+•	Command-and-control behavior
+•	Device logs
+•	Interface counters
+•	Application logs
+•	Change records
+•	User timestamps
+
